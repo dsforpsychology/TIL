@@ -2,7 +2,10 @@
 문제 링크
 https://swexpertacademy.com/main/solvingProblem/solvingProblem.do
 
-- 포인트 : 최대값 설정, 
+- 포인트 : 최대값 설정, 건물 높이를 기준으로 차이를 구하는 발상 
+****
+#### 소스코드 
+****
 
 ```python
 import sys
@@ -24,7 +27,6 @@ for tc in range(1, T+1):
             if i == j:             # 나를 나와 비교할 때는 패스
                 continue
             # 최대값이 내 위치보다 낮을 때 최대값을 바꾸기
-            
             if height < buildings[j]:
                 height = buildings[j]
         # 내 높이가 구해 낸 최대값보다 큰만큼 조망권 획득
@@ -33,4 +35,4 @@ for tc in range(1, T+1):
 
     print(f'#{tc} {view_count}')
 ```
-
+****
